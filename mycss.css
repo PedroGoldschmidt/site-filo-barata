@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+      
+
+::selection{
+    background-color: black;
+    color: white;
+ }
+
+.card-body ::selection{
+    background-color: purple;
+    color: white;
+ }
+
+
+.navbar-brand {
+    font-size: 32px;
+    font-family:'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.card {
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow:
+  3px 2.4px 8.2px -14px rgba(0, 0, 0, 0.105),
+  7.6px 6.2px 14.8px -14px rgba(0, 0, 0, 0.123),
+  15.4px 12.6px 21.9px -14px rgba(0, 0, 0, 0.14),
+  31.8px 25.9px 34.5px -14px rgba(0, 0, 0, 0.167),
+  87px 71px 80px -14px rgba(0, 0, 0, 0.21);
+}
+
+
+.card-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+#carouselExampleCaptions{
+    padding-top: 60px;
+}
+
+.legenda-carrossel {
+    font-size: 38px;
+    background-color: rgba(0, 0, 0, 0.600);
+    margin-bottom: 50px;
+}
+
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid yellow;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+
+#side_nav {
+    background: #333;
+    min-width: 250px;
+    max-width: 250px;
+    margin-top: 350px;
+    transition: all 0.2s;
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+}
+
+hr.h-color {
+    background-color: white;
+}
+
+.sidebar li.active {
+    background: white;
+    border-radius: 8px;
+}
+
+.sidebar li.active a, .sidebar li.active a:hover{
+    color: #000;
+}
+
+.sidebar li a{
+    color: #fff;
+    margin-bottom: 4px;
+    background-color: rgb(31, 30, 30);
+}
+
+@media(max-width: 767px){
+    #side_nav{
+        margin-left: -250px;
+        position: absolute;
+        min-height: 100vh;
+        z-index: 1;
+    }
+    #side_nav.active{
+        margin-left: 0;
+    }
+}
+
+.assunto-content{
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 10px;
+    text-align: justify;
+    
+}
+
+.titulo-pensadores{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 46px;
+    
+}
+
+.titulo-livros{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 46px;
+}
+
+.titulo-videos{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 46px;
+}
+
+.titulo-biografia{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    font-size: 46px;
+}
+
+.frases-filo{
+    font-family: 'Mukta', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.frases-filo p {
+    margin-bottom: 20px;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+   .div-svg{
+    margin-top: 100px;
+    margin-bottom: -70px;
+   }
