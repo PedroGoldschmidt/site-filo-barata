@@ -10,6 +10,7 @@
 - HTML
 - CSS
 - Git e Github
+- Bootstrap
 
 ## Contato
 
